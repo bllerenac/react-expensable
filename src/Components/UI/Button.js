@@ -82,13 +82,13 @@ const StyledButton2 = styled.button`
 `;
 
 
-function RadioButton({label, name, status}){
+function RadioButton({label, name, status, value}){
   return(
     <StyledDiv>
       <StyledFilter     name={name} 
                         type="radio" 
                         id={label}
-                        value={label} 
+                        value={value} 
                         defaultChecked={status ? true:false} 
                         />
       <StyledLabel htmlFor={label} >{label}</StyledLabel>

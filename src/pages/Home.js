@@ -64,8 +64,8 @@ export default function Home() {
         </p>
       )}
       <Filter onChange={handleChange}>
-        <RadioButton label="Expense" name="type" status/>
-        <RadioButton label="Income" name="type"/>
+        <RadioButton label="Expenses" name="type" value="expense"status/>
+        <RadioButton label="Income" name="type" value="income"/>
       </Filter>
       {status === "succeeded" && (
         <ListCards data={filterCategories || products}/>
