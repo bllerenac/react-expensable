@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { fetchProducts } from "../features/products/productsSlice";
 import { killToken } from "../features/session/sessionSlice";
 import {StyledH1} from "../Components/UI/Typografy";
-import {RadioButton} from "../Components/UI/Button";
+import {RadioButton, StyledButton2} from "../Components/UI/Button";
 import ListCards from "../Components/Contents/ListCards"
 
 const Filter = styled.form`
@@ -70,6 +70,9 @@ export default function Home() {
       {status === "succeeded" && (
         <ListCards data={filterCategories || products}/>
       )}
+        <StyledButton2 onClick={(e) => dispatch(killToken())}>
+          LogOut
+        </StyledButton2>
     </div>
   );
 }

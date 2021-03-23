@@ -35,7 +35,53 @@ display: none;
   color: #4F4F4F;
   background-size: 100% 2px;
 }
-`
+`;
+
+const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px 16px;
+  margin: auto;
+  background: #2F80ED;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  outline: none;
+  &:hover{
+    background: #2D9CDB;
+  }
+`;
+
+const StyledButton2 = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 8px 16px;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #2F80ED;
+  color: #2F80ED;
+  outline: none;
+  &:hover{
+    background: rgba(47, 128, 237, 0.1);
+  }
+`;
+
+
 function RadioButton({label, name, status}){
   return(
     <StyledDiv>
@@ -50,4 +96,4 @@ function RadioButton({label, name, status}){
   );
 }
 
-export {RadioButton};
+export {RadioButton, StyledButton, StyledButton2};

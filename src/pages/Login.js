@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import { useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import LoginForm from "../features/session/loginform";
+import {StyledButton} from "../Components/UI/Button"
 
 const StyledH1 = styled.h1`
   font-family: 'Inter', sans-serif;
@@ -49,9 +50,9 @@ function Login() {
       <StyledH1>Welcome to Expensable</StyledH1>
       <StyledH5>Please login to start using the app</StyledH5>
       <LoginForm id="login-form" />
-        <button type="submit" form="login-form">
-          Login
-        </button>
+        <StyledButton type="submit" form="login-form" >
+        Login
+        </StyledButton>
     </div>
   );
 }
