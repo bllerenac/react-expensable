@@ -32,6 +32,7 @@ const ContentS = styled.p`
   line-height: 24px;
   text-align: center;
   color: #4F4F4F;
+  margin: 0px;
 `
 const ContentXL = styled.p`
   font-family: 'Roboto', sans-serif;
@@ -40,6 +41,7 @@ const ContentXL = styled.p`
   font-size: 20px;
   line-height: 32px;
   color: #4F4F4F;
+  margin: 0px;
 `
 export {StyledH5, 
         StyledH1,
