@@ -24,6 +24,7 @@ background-size: 0% 2px;
 transition: background-size .3s;
 outline: none;
 &:hover{
+  color: #4F4F4F;
   background-size: 100% 2px;
 }
 `;
